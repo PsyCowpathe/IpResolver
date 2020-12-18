@@ -18,8 +18,6 @@ Add Ip = 192.168.0.1 -> [11000000.10101000].(00000000.00000001)
 
 						   [Reseau] (Machine)
 
-/*Calcul du nombre de sous reseau*/
-
 /*Nombre d'addresse*/
 
 2^nombre de bit a 0 - 2 (-2 car on ne peut pas attribuer l'addresse du sous-reseau et l'addresse de diffusion
@@ -106,8 +104,21 @@ ex ip = 233.249.146.36 masque = 255.255.254.0 = 11111111.11111111.11111110.00000
 
 cidr = 233.249.146.36/23
 
+/*TCP/UDP*/
 
-Addresse prive, publique etc | tcp, udp | dhcp (protocole) | calcul addresse reseau a partir d'une ip, calcul de fin de plage, couche
+UDP = User Datagram Protocol
+UDP est un protocole oriente datagramme, un datagaramme est un paquet de donnee generalement
+utilise pour designer une systeme de transmissions non fiable car le protocole ne garanti pas l'arrive du paquet contrairement a
+
+TCP = Transmission Control Protocol
+TCP est un protocole de transmission de donnee de maniere connecte, c'est a dire qu'il garanti la bonne reception des paquets entre deux machine grace a sont fonctionnement en trois phases : 
+		
+		-établissement de la connexion
+		-transferts de données 
+		-fin de la connexion
+
+
+
 
 123.48.189.194
 01111011.00110000.10111000.00000000
